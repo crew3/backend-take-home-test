@@ -2,7 +2,7 @@
 
 Crew3 functions as a central hub for web3 communities, where contributors gather to learn, engage, and discover new communities. The bedrock of the engagement mechanism lies in its quests, which are are designed to be modulable, fun and intuitive.
 
-For this assignement, you will create a simple version of our claim quest endpoint. Given a JSON payload that represents a quess submission, the endpoint should return a JSON response that includes the submission's success status and a score that reflects the submission's quality. 
+For this assignement, you will create a simple version of our claim quest endpoint. Given a JSON payload that represents a quest submission, the endpoint should return a JSON response that includes the submission's success status and a score that reflects the submission's quality. 
 
 ## The input
 ```jsonc
@@ -64,6 +64,15 @@ The score should be computed using the submission_text string:
 - Check if the input string contains any repetitive sequences (such as "aaa" or "abaaba"). If it does, return a score of 9.
 If none of the above conditions apply, return a score of 10.
 
-## Bonus
-On the score computation, check if the input string contains any offensive language or hate speech. If it does, return a score of 0.
+**Bonus:** Check if the input string contains any offensive language or hate speech. If it does, return a score of 0.
+
+## Submission
+The code should be organized, designed, tested, and documented as if it were going into production.
+When complete, please provide a link to your projects GitHub repo (or public source control service of choice).
+You can do this by replying to the email from the recruiting team.
+
+If you have any questions, please reach out to louis@crew3.xyz.
+
+If you spend more than 2 hours on this, feel free to submit partial work. We want to be respectful of people's time commitments, and we can learn a lot about your work even if it's incomplete.
+
 
