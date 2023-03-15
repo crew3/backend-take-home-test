@@ -2,7 +2,7 @@
 
 Crew3 functions as a central hub for web3 communities, where contributors gather to learn, engage, and discover new communities. The bedrock of the engagement mechanism lies in its quests, which are are designed to be modulable, fun and intuitive.
 
-For this assignement, you will create a simple version of our claim quest endpoint. Given a JSON payload that represents a quest submission, the endpoint should return a JSON response that includes the submission's success status and a score that reflects the submission's quality. 
+For this assignement, you will create a simple version of our claim quest endpoint, written in NodeJs (using the framework of your choice) and Typescript. Given a JSON payload that represents a quest submission, the endpoint should return a JSON response that includes the submission's success status and a score that reflects the submission's quality. 
 
 ## The input
 ```jsonc
