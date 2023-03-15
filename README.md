@@ -37,4 +37,33 @@ For this assignement, you will create a simple version of our claim quest endpoi
   "submission_text": "Lorem ipsum dolor sit amet.", // string
 }
 ```
-## Algorithm
+## Expected output
+```jsonc
+{
+  "status": "success" // can be fail or success,
+  "score": 3, // integer between 0 and 10
+}
+```
+For a quest to be considered successful, the following criteria must be met:
+- It satisfies all access conditions (NFT, date and level). Keep in mind that not all access conditions might be there.
+- The quest has not been previously completed by the user.
+- The score is greater or equal than 5.
+
+## Score algorithm
+The score should be computed using the submission_text string:
+- Initialize a score variable to 0.
+- Check if the input string is empty. If it is, return a score of 0.
+- Check if the input string contains only whitespace characters. If it does, return a score of 1.
+- Check if the input string contains only digits. If it does, return a score of 2.
+- Check if the input string contains only uppercase letters. If it does, return a score of 3.
+- Check if the input string contains only lowercase letters. If it does, return a score of 4.
+- Check if the input string contains both uppercase and lowercase letters. If it does, return a score of 5.
+- Check if the input string contains at least one punctuation character (",", ".", "?", "!"). If it does, return a score of 6.
+- Check if the input string contains at least one special character (@, #, $, %, ^, &, *). If it does, return a score of 7.
+- Check if the input string is a palindrome. If it is, return a score of 8.
+- Check if the input string contains any repetitive sequences (such as "aaa" or "abaaba"). If it does, return a score of 9.
+If none of the above conditions apply, return a score of 10.
+
+## Bonus
+On the score computation, check if the input string contains any offensive language or hate speech. If it does, return a score of 0.
+
