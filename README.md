@@ -46,23 +46,16 @@ For this assignement, you will create a simple version of our claim quest endpoi
 ```
 For a quest to be considered successful, the following criteria must be met:
 - It satisfies all access conditions (NFT, date and level). Keep in mind that not all access conditions might be there.
-- The quest has not been previously completed by the user.
+- The quest has not been previously completed by the user. For the simplicity of the exercice, you can store completed quests either in a global variable or in a file.
 - The score is greater or equal than 5.
 
 ## Score algorithm
 The score should be computed using the submission_text string:
 - Initialize a score variable to 0.
-- Check if the input string is empty. If it is, return a score of 0.
-- Check if the input string contains only whitespace characters. If it does, return a score of 1.
-- Check if the input string contains only digits. If it does, return a score of 2.
-- Check if the input string contains only uppercase letters. If it does, return a score of 3.
-- Check if the input string contains only lowercase letters. If it does, return a score of 4.
-- Check if the input string contains both uppercase and lowercase letters. If it does, return a score of 5.
-- Check if the input string contains at least one punctuation character (",", ".", "?", "!"). If it does, return a score of 6.
-- Check if the input string contains at least one special character (@, #, $, %, ^, &, *). If it does, return a score of 7.
-- Check if the input string is a palindrome. If it is, return a score of 8.
-- Check if the input string contains any repetitive sequences (such as "aaa" or "abaaba"). If it does, return a score of 9.
-If none of the above conditions apply, return a score of 10.
+- If the string contains one punctuation character (",", ".", "?", "!"), add 1 points.
+- If the string contains a palindrome, add 2 points.
+- If the string contains at least 2 joyfull words, add 3 points. Happyword list is: Joyful, Happy, Vibrant, Thrilled, Euphoric, Cheerful, Delighted.
+- If the string contains any repetitive sequences (such as "aaa" or "abaaba"), add 4 points.
 
 **Bonus:** Check if the input string contains any offensive language or hate speech. If it does, return a score of 0.
 
