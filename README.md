@@ -54,8 +54,8 @@ The score should be computed using the submission_text string:
 - Initialize a score variable to 0.
 - If the string contains one punctuation character (",", ".", "?", "!"), add 1 points.
 - If the string contains a palindrome, add 2 points.
-- If the string contains at least 2 joyfull words, add 3 points. Happyword list is: Joyful, Happy, Vibrant, Thrilled, Euphoric, Cheerful, Delighted.
-- If the string contains any repetitive sequences (such as "aaa" or "abaaba"), add 4 points.
+- For each joyfull words, add 1 point. The point allocation should be limited to a maximum of 3 words. Happyword list is: Joyful, Happy, Vibrant, Thrilled, Euphoric, Cheerful, Delighted.
+- If the string contains any repetitive sequences (such as "aaa" or "abaaba"), add 3 points.
 
 **Bonus:** Check if the input string contains any offensive language or hate speech. If it does, return a score of 0.
 
