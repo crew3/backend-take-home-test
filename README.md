@@ -31,7 +31,7 @@ For this assignement, you will create a simple version of our claim quest endpoi
     "completed_quests": [
       "94e2e33e-07e9-4750-8cea-c033d7706057"
     ], // array of uuid
-    "nfts": ["Ox1", "0x2"], // array of NFTs ID (hexadecimal)
+    "nfts": ["0x1", "0x2"], // array of NFTs ID (hexadecimal)
     "level": 3 // positive integer
   },
   "submission_text": "Lorem ipsum dolor sit amet.", // string
